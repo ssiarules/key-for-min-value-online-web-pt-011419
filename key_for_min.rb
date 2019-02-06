@@ -2,11 +2,12 @@
 # Given a hash with numeric values, return the key for the smallest value
 
 def key_for_min_value(name_hash)
-     smallest_value = nil 
-     smallest_key = nil 
+     smallest_value = nil #this will contain our lowest value
+     smallest_key = nil  #this will contain the key for our lowest value
      name_hash.each do |name, value| 
-       if value < smallest_value 
-         smallest_value = name
+       if value < smallest_value #if the value in our hash is lower than our smallest_value, reassign smallest value to value
+         smallest_value = value #reassigning smallest_value to lowest value 
+         #
         elsif value == value
           smallest_value = smallest_value[0]
          end 
